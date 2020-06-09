@@ -14,7 +14,8 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://votca/buildenv:latest'
-  entrypoint: 'cmake/entrypoint.sh'
+  pre-entrypoint: 'pwd'
+  entrypoint: 'ls -R'
   args:
     - DISTRO=${{ inputs.distro }}
     - MINIMAL=${{ inputs.minimal }}
