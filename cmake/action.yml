@@ -14,5 +14,4 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://votca/buildenv:latest'
-  pre-entrypoint: 'pwd'
-  entrypoint: 'ls'
+  entrypoint: ["ls", "-R", "../../"]
