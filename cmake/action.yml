@@ -16,6 +16,3 @@ runs:
   image: 'docker://votca/buildenv:latest'
   pre-entrypoint: 'pwd'
   entrypoint: 'ls'
-  args:
-    - DISTRO=${{ inputs.distro }}
-    - MINIMAL=${{ inputs.minimal }}
