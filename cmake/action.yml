@@ -9,7 +9,7 @@ inputs:
     description: 'If minimal'
     required: false
 outputs:
-        cmake:args:
+  cmake:args:
     description: 'CMake args to use'
 runs:
   using: 'docker'
