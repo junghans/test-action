@@ -13,5 +13,4 @@ outputs:
     description: 'CMake args to use'
 runs:
   using: 'docker'
-  image: 'docker://votca/buildenv:latest'
-  entrypoint: ["ls", "-R", "../../"]
+  image: 'Dockerfile'
